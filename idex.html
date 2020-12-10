@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <input id="tien" type="number">
+        <input id="bam" type="button" value="tinh so ngay" onclick=songay()>
+
+    </form>
+
+<script>
+    function songay(){
+        var a = parseInt(document.getElementById("tien").value)
+        switch (a){
+            case 1:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+
+                document.write("Tháng " +   a   + " có 31 ngày");
+            break
+            case 2:
+                document.write("Tháng này có 28 hoặc 29 ngày");
+                break;
+        }
+
+
+
+    }
+
+</script>
+
+</body>
+</html>
